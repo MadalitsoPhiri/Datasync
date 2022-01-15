@@ -54,15 +54,7 @@ router.put('/:id',async(req,res)=>{
     }
 })
 
-// //delete user
-// router.delete('/:id',async(req,res)=>{
-//   try{
-//        await UserModel.findByIdAndDelete(req.params.id)
-//        res.status(200).json({message:"user deleted succesfully"})
-//   }catch(err){
-//        res.status(500).json({message:"internal server error"})
-//   }
-// })
+
 
 
 
