@@ -43,10 +43,32 @@ These Docs apply to both of the datasource api servers.
 This endpoint is going to get you all the users
 
 ## PUT /api/users/:userid ###
-This endpoint is used to update an already existing user and accepts a json payload with the parameters customerDetails which is an object with the following properties
+This endpoint is for data store A specifically used to update an already existing user and accepts a json payload with the parameters customerDetails which is an object with the following properties
  - name = String
  - email = String
 
- please note that update wont work from the datasource B Due to technical problems. but it works by entering manully from the  sheets.
+
+ ## PUT /api/users/ ###
+This endpoint is for data store B specifically used to update an already existing user and accepts a json payload with the parameters customerDetails which is an object with the following properties
+ - name = String
+ - email = String
+  and range which is an object with the following properties
+  - row = String
+
+ row is the row number you want to update on the google sheet 
+
+
+ example request payload "{
+    "customerDetails":{
+        "name":"gordon",
+        "email":"gordon@gmail.com"
+    },
+    "range":{
+        "row":"9"
+    }
+}"
+ 
+
+
 
 
