@@ -56,6 +56,7 @@ This endpoint is for data store A specifically used to update an already existin
 This endpoint is for data store B specifically used to update an already existing user and accepts a json payload with the parameters customerDetails which is an object with the following properties
  - name = String
  - email = String
+ 
   and range which is an object with the following properties
   - row = String
 
