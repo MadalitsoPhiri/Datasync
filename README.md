@@ -31,13 +31,14 @@ These Docs apply to both of the datasource api servers.
  - name = String
  - email = String
 
- example request payload "{
+ example request payload 
+ ```{
     "customerDetails":{
         "name":"Bruno",
         "email":"Bruno7@gmail.com"
 
     }
-}"
+}```
 
 ## GET /api/users ###
 This endpoint is going to get you all the users
@@ -58,7 +59,8 @@ This endpoint is for data store B specifically used to update an already existin
  row is the row number you want to update on the google sheet 
 
 
- example request payload "{
+ example request payload
+  ```{
     "customerDetails":{
         "name":"gordon",
         "email":"gordon@gmail.com"
@@ -66,7 +68,7 @@ This endpoint is for data store B specifically used to update an already existin
     "range":{
         "row":"9"
     }
-}"
+}```
  
 
 
